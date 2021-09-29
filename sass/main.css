@@ -1,0 +1,97 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: #171919;
+}
+
+header .container a:hover {
+  color: #e8d979;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .container img {
+  padding: 8px 0;
+}
+
+header .container .header-language {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+header .container .menu-button button {
+  background-color: #4752b1;
+  width: 60px;
+  height: 60px;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+}
+
+header .container .header-links {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+header .container .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .container .search-button button {
+  width: 70px;
+  height: 74px;
+  background-color: white;
+  border: none;
+}
+
+.carousel-item {
+  height: 600px;
+  background: #2427eb;
+  color: white;
+}
+
+.carousel-item .overlay-image {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.carousel-item .container {
+  padding-top: 100px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 150px;
+}
+/*# sourceMappingURL=main.css.map */
