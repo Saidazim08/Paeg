@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,15 +26,14 @@
         <div class="container py-2 d-flex align-items-center justify-content-between">
             <img src="https://www.paeg.uz/vendor/site/img/logo2.png" alt="?">
             <div class="header-language d-none d-md-block d-xl-block d-xs-none">
-                <a class="mx-2" href="#">Рус</a>
+                <a class="me-2" href="#">Рус</a>
                 <a class="mx-2" href="#">O'zb</a>
                 <a class="mx-2" href="#">Eng</a>
             </div>
             <div class="d-none d-md-block d-xl-block d-xs-none">
-                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="me-2" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="mx-2" href="#"><i class="fab fa-telegram-plane"></i></a>
-                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="menu-button d-xl-none">
                 <button onclick="openNav()">
@@ -40,9 +41,9 @@
                 </button>
 
             </div>
-            <div class="d-flex align-items-center d-none d-xl-block">
+            <div class="d-flex align-items-center me-5 d-none d-xl-block">
                 <ul class="header-links">
-                    <li class="mx-2"><a class="active" href="index.html">MAIN</a></li>
+                    <li class="mx-e"><a class="active" href="index.html">MAIN</a></li>
                     <li class="mx-2"><a href="about.html">ABOUT US</a></li>
                     <li class="mx-2"><a href="products.html">PRODUCTS</a></li>
                     <li class="mx-2"><a href="news.html">NEWS</a></li>
@@ -50,38 +51,47 @@
                     <li class="mx-2"><a href="contacts.html">CONTACTS</a></li>
                 </ul>
             </div>
-            <div class="search-button d-none d-xl-block">
-                <form class="w-100">
-                    <input class="search" type="text" name="search"
-                    placeholder="Поиск">
-                </form>
+            <div class="d-none d-xl-block">
+                <input type="checkbox" id="bc2">
+                <label for="bc2" class="search-icon">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-close"></i>
+                </label>
+                <div class="search-box">
+                    <form>
+                        <input type="text" name="search" placeholder="Search" class="search">
+                        <input type="submit" value="Ok" class="sub">
+                    </form>
+                </div>
             </div>
+
+
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class="activee" href="index.html">MAIN</a>
+                <a class="active" href="index.html">MAIN</a>
                 <a href="about.html">ABOUT US</a>
                 <a href="products.html">PRODUCTS</a>
                 <a href="news.html">NEWS</a>
                 <a href="clients.html">CLIENTS</a>
-                <a href="contacts.html">CONTACTS</a>
+                <a  href="contacts.html">CONTACTS</a>
             </div>
         </div>
     </header>
 
     <section class="firstPage">
         <div id="headerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-            </div>
+            <ul class="carousel-indicators">
+                <li type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"
+                    >Transformers</li>
+                <li type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"
+                    >Instulation material</li>
+                <li type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"
+                   >Reactors</li>
+                <li type="button" data-bs-target="#headerCarousel" data-bs-slide-to="3"
+                    >Insulation papers</li>
+                <li type="button" data-bs-target="#headerCarousel" data-bs-slide-to="4"
+                    >Complete</li>
+            </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="overlay-image" style="background-image:url(./images/slider_img1.png)"></div>
@@ -91,7 +101,7 @@
                             simplicity
                             and reliability of operation, and most importantly - it is more pleasant cost of the final
                             product.</p>
-                        <a class="btn" href="#">MORE</a>
+                        <a class="btn" href="#">MORE <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -99,7 +109,7 @@
                     <div class="container text-center">
                         <h1>THE MOST POPULAR BRANDS OF HIGH QUALITY DIELECTRICS.</h1>
                         <p>Creating innovative solutions to extend the life of transformer insulation.</p>
-                        <a href="#">MORE</a>
+                        <a class="btn" href="#">MORE <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -107,7 +117,7 @@
                     <div class="container text-center">
                         <h1>HIGH RELIABILITY AND SERIOUS ENERGY EFFICIENCY.</h1>
                         <p>Energy product of the highest quality with many physical advantages.</p>
-                        <a href="#">MORE</a>
+                        <a class="btn" href="#">MORE <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -115,7 +125,7 @@
                     <div class="container text-center">
                         <h1>MATERIALS WITH GOOD DIELECTRIC PROPERTIES.</h1>
                         <p>Moisture and heat resistance, high electrical and mechanical strength.</p>
-                        <a href="#">MORE</a>
+                        <a class="btn" href="#">MORE <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -123,7 +133,7 @@
                     <div class="container text-center">
                         <h1>OVER LONG DISTANCES WITH MINIMAL LOSSES</h1>
                         <p>Reliable reception, conversion and distribution of electrical energy</p>
-                        <a href="#">MORE</a>
+                        <a class="btn" href="#">MORE <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -147,7 +157,7 @@
                         our activities. Produce: КТПС, КТПТУ-35кВ ГКТП, КТПП, КТПН, ПКТПН, КТПЖ, КТПО КРУН, КСО, К-42
                         ТФЗМ-110, КТПБ-110, ВМТ-110. Switchgear camera КСО-285, КСО-298, К-59. Disconnectors up to 110
                         kV (RLD, RVZ,...</p>
-                    <a class="btn" href="#">MORE</a>
+                    <a class="btn" href="about.html">MORE</a>
                 </div>
                 <div class="col-lg-2 col-md-3  d-none d-sm-none d-md-block pt-5">
                     <div class="number ">
@@ -408,7 +418,7 @@
                 </div>
             </div>
             <div class="col-xxl-3 col-lg-3 col-sm-3 col-xs-12 d-flex flex-column">
-                <a class="pt-5 ps-sm-5 text-warning" href="#">Связаться со мной</a>
+                <a class="pt-5 ps-sm-5 text-warning" href="contacts.html">Связаться со мной</a>
             </div>
         </div>
     </section>
